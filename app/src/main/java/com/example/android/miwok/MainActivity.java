@@ -18,10 +18,10 @@ public class MainActivity extends AppCompatActivity {
         setContentView(layout.activity_main);
 
         // Find every View for every category
-        TextView numbers = (TextView) findViewById(R.id.numbers);
-        TextView family = (TextView) findViewById(R.id.family);
-        TextView colors = (TextView) findViewById(R.id.colors);
-        TextView phrases = (TextView) findViewById(R.id.phrases);
+        TextView numbers = findViewById(R.id.numbers);
+        TextView family = findViewById(R.id.family);
+        TextView colors = findViewById(R.id.colors);
+        TextView phrases = findViewById(R.id.phrases);
 
         // Set a click listener on that View
         numbers.setOnClickListener(new View.OnClickListener() {
