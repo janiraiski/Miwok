@@ -3,7 +3,9 @@ package com.example.android.miwok;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.util.Log;
+import android.widget.ArrayAdapter;
 import android.widget.LinearLayout;
+import android.widget.ListView;
 import android.widget.TextView;
 
 import org.w3c.dom.Text;
@@ -30,6 +32,12 @@ public class NumbersActivity extends AppCompatActivity
 		words.add(7, "eight");
 		words.add(8, "nine");
 		words.add(9, "ten");
+
+        ArrayAdapter<String> itemsAdapter = new ArrayAdapter<String>(this, android.R.layout.simple_list_item_1, words);
+
+        ListView listView = (ListView) findViewById(R.id.list);
+
+        listView.setAdapter(itemsAdapter);
 
 		// Makes a variable from the activity_numbers.xml root view
 		LinearLayout rootView = findViewById(R.id.rootView);
