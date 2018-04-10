@@ -29,7 +29,8 @@ public class MainActivity extends AppCompatActivity {
             @Override
             public void onClick(View view) {
                 // In this case, intent is used to launch another activity
-                Intent numbersIntent = new Intent(MainActivity.this, NumbersActivity.class);
+                Intent numbersIntent = new Intent(MainActivity.this,
+                        NumbersActivity.class);
                 startActivity(numbersIntent);
             }
         });
