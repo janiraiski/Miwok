@@ -43,7 +43,8 @@ public class MainActivity extends AppCompatActivity {
             @Override
             public void onClick(View view) {
                 // In this case, intent is used to launch another activity
-                Intent familyIntent = new Intent(MainActivity.this, FamilyActivity.class);
+                Intent familyIntent = new Intent(MainActivity.this,
+                        FamilyActivity.class);
                 startActivity(familyIntent);
             }
         });
@@ -54,7 +55,8 @@ public class MainActivity extends AppCompatActivity {
             @Override
             public void onClick(View view) {
                 // In this case, intent is used to launch another activity
-                Intent colorsIntent = new Intent(MainActivity.this, ColorsActivity.class);
+                Intent colorsIntent = new Intent(MainActivity.this,
+						ColorsActivity.class);
                 startActivity(colorsIntent);
             }
         });
@@ -65,7 +67,8 @@ public class MainActivity extends AppCompatActivity {
             @Override
             public void onClick(View view) {
                 // In this case, intent is used to launch another activity
-                Intent phrasesIntent = new Intent(MainActivity.this, PhrasesActivity.class);
+                Intent phrasesIntent = new Intent(MainActivity.this,
+						PhrasesActivity.class);
                 startActivity(phrasesIntent);
             }
         });

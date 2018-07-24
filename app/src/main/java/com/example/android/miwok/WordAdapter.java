@@ -2,6 +2,8 @@ package com.example.android.miwok;
 
 import android.app.Activity;
 import android.graphics.Color;
+import android.media.MediaPlayer;
+import android.provider.MediaStore;
 import android.support.annotation.NonNull;
 import android.support.annotation.Nullable;
 import android.support.v4.content.ContextCompat;
@@ -21,6 +23,7 @@ import java.util.ArrayList;
 public class WordAdapter extends ArrayAdapter<Word> {
 
 	private int mColorResourceId;
+	private MediaPlayer musicPlayer;
 
 	public WordAdapter(Activity context, ArrayList<Word> words, int colorResourceId) {
 		super(context, 0, words);
